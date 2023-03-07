@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  background: rgb(231, 240, 255);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-body {
+  width: calc(100% - 40px);
+  height: calc(100% - calc(110px));
+
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-style: dotted;
+  border-color: rgba(0, 0, 0, 0.085);
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.084);
 }
