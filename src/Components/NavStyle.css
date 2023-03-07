@@ -5,8 +5,8 @@
   height: 50px;
   
   color: rgb(79, 79, 204);
-  background: rgb(245, 245, 245);
-
+  background: linear-gradient(45deg, rgb(239, 239, 255),rgb(226, 226, 255));
+  
   position: fixed;
   top: 20px;
   left: 50%;
@@ -17,7 +17,7 @@
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
   z-index: 1;
-
+  
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -25,7 +25,7 @@
   width: 100%;
   height: calc(100%);
 
-  background: rgb(245, 245, 245);
+  background: linear-gradient(45deg, rgb(239, 239, 255),rgb(226, 226, 255));
 
   display: flex;
   justify-content: center;
@@ -72,9 +72,9 @@
 
 .line1, .line2 {
   width: 80%;
-  height: 1px;
+  height: 2px;
   
-  background: rgb(19, 19, 19);
+  background: rgb(79, 79, 204);
   transition-duration: 0.3s;
 }
 
@@ -109,8 +109,6 @@
     display: flex;
     align-items: center;
     overflow: visible;
-
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.128);
   }
 
   .nav-list {
@@ -124,9 +122,11 @@
     width: 170px;
     height: 200px;
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.091);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     transform: translateX(200%);
     transition-duration: 0.3s;
+
+    border-radius: 10px;
   }
   
   .toggleMenu {
@@ -144,9 +144,5 @@
   .main-body {
     width: calc(100% - 20px);
     height: calc(100% - calc(90px));
-  }
-
-  .App {
-    background: rgb(244, 248, 255);
   }
 }
