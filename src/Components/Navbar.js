@@ -10,6 +10,7 @@ const toggleMenu = () => {
 const Navbar = () => {
 
   return (
+
     <nav className='nav-bar'>
       <ul className='nav-list'>
         <li className="nav-item-btn">Breakfast</li>
@@ -21,6 +22,10 @@ const Navbar = () => {
       <div className="menu-btn" onClick={toggleMenu}>
         <div className='line1'></div>
         <div className='line2'></div>
+      </div>
+
+      <div className="menu">
+        Menu
       </div>
     </nav>
   )

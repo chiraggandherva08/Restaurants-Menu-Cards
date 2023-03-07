@@ -13,15 +13,21 @@ function App() {
       <Navbar />
       <div className="main-body">
         {
-          Data.map( (item) => {
-            <Card
-              key={item.id}
-              number={item.number}
-              name={item.name}
-              price={item.price}
-              disc={item.description}
-              category={item.category}
-            />
+          Data.map((item) => {
+            const imageSrc = {
+              backgroundImage: "url(" + item.image + ")"
+            }
+            return (
+              <Card
+                key={item.id}
+                number={item.number}
+                name={item.name}
+                price={item.price}
+                disc={item.description}
+                category={item.category}
+                imageSrc={imageSrc}
+              />
+            )
           })
         }
       </div>
