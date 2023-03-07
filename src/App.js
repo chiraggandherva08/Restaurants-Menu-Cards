@@ -5,15 +5,14 @@ import Card from './Components/Card';
 import Data from './Components/Data';
 
 function App() {
-
-  console.log(Data);
+  const [Data_, setData_] = useState(Data);
 
   return (
     <div className="App">
       <Navbar />
       <div className="main-body">
         {
-          Data.map((item) => {
+          Data_.map((item) => {
             const imageSrc = {
               backgroundImage: "url(" + item.image + ")"
             }

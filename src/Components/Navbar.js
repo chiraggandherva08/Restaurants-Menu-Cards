@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './NavStyle.css';
+import Data from './Data';
 
 const toggleMenu = () => {
   document.querySelector(".line1").classList.toggle("toggleLine1");
@@ -10,7 +11,6 @@ const toggleMenu = () => {
 const Navbar = () => {
 
   return (
-
     <nav className='nav-bar'>
       <ul className='nav-list'>
         <li className="nav-item-btn">Breakfast</li>
